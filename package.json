@@ -8,7 +8,7 @@
     "start": "cd server && npm start",
     "build": "npm run build:server && npm run build:client",
     "build:server": "cd server && npm install",
-    "build:client": "cd client && npm install && npm run build ",
+    "build:client": "cd client && npm install --include=dev && npm run build ",
     "format": "prettier --write **/*.{js,jsx,ts,tsx}",
     "format:check": "prettier --check **/*.{js,jsx,ts,tsx}",
     "prepare": "husky install"
