@@ -1,20 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function FrontPage() {
   return (
     <div>
-      <h2>Frontpage react</h2>
+      <h2>Welcome to my react page!</h2>
+
+      <ul>
+        <li>
+          <Link to={"/login"}>Login</Link>
+        </li>
+      </ul>
     </div>
   );
 }
 
 function Login() {
   return (
-    <div>
-      <h2>React Login</h2>
-    </div>
+    <form>
+      <h1>Login</h1>
+      <div>
+        Username <input type={"text"} />
+      </div>
+      <div>
+        Password <input type={"password"} />
+      </div>
+      <div>
+        <button>Login</button>
+      </div>
+    </form>
   );
 }
 
