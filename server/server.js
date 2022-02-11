@@ -6,7 +6,7 @@ app.get("/login", (req, res, next) => {
   res.json({ username: "Mr Babe" });
 });
 
-app.post("/login", (req, res, next) => {
+app.post("/api/login", (req, res, next) => {
   res.sendStatus(401);
 });
 
