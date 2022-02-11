@@ -14,7 +14,7 @@ app.post("/login", (req, res, next) => {
 app.use(express.static("../client/dist"));
 
 app.use((req, res) => {
-  res.sendFile(path.resolve("..client"));
+  res.sendFile(path.resolve("..client/dist.index.html"));
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
